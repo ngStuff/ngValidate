@@ -4,32 +4,14 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = [
   {
-    name: 'Raw Output',
+    name: 'Minified Output',
     entry: './src/index.js',
     output: {
       filename: 'ngValidate.js',
       path: path.resolve(__dirname, 'dist')
     },
     plugins: [
-      new CleanWebpackPlugin(['dist/ngValidate.js'])
-    ],
-    module: {
-      loaders: [{
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
-      }]
-    }
-  },
-  {
-    name: 'Minified Output',
-    entry: './src/index.js',
-    output: {
-      filename: 'ngValidate.min.js',
-      path: path.resolve(__dirname, 'dist')
-    },
-    plugins: [
-      new CleanWebpackPlugin(['dist/ngValidate.min.js']),
+      new CleanWebpackPlugin(['dist/ngValidate.js']),
       new UglifyJSPlugin()
     ],
     module: {

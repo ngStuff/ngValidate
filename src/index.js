@@ -1,2 +1,2 @@
-import './base.js';
+import './core.js';
 import './email.js';
