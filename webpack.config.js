@@ -2,16 +2,20 @@ const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
+const buildName = 'ngValidate.js';
+const buildDir = 'dist';
+const buildPath = `${buildDir}/${buildName}`;
+
 module.exports = [
   {
     name: 'Minified Output',
     entry: './src/index.js',
     output: {
-      filename: 'ngValidate.js',
-      path: path.resolve(__dirname, 'dist')
+      filename: buildName,
+      path: path.resolve(__dirname, buildDir)
     },
     plugins: [
-      new CleanWebpackPlugin(['dist/ngValidate.js']),
+      new CleanWebpackPlugin([buildPath]),
       new UglifyJSPlugin()
     ],
     module: {
