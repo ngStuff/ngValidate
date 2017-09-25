@@ -1,7 +1,7 @@
 
 window.angular && (() => {
   
-  var app = angular.module('ngValidate', []);
+  var app = angular.module('ngStuff.validate', []);
 
   app.directive('validateAsync', ['$parse', '$q', ($parse, $q) => {
     return {
