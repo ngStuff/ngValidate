@@ -1,5 +1,5 @@
 {
-  "name": "ng-validate",
+  "name": "ngstuff-validate",
   "version": "1.0.0",
   "description": "This is an angularjs module for validating form fields",
   "main": "index.js",

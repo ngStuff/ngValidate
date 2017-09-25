@@ -1,0 +1,24 @@
+{
+  "name": "ngstuff-validate",
+  "description": "This is an angularjs module for validating form fields",
+  "main": "index.js",
+  "authors": [
+    "Christian Ezeani"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularjs",
+    "ngvalidate",
+    "form",
+    "form-fields",
+    "fields"
+  ],
+  "homepage": "https://github.com/ngStuff/ngValidate",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
