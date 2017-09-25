@@ -10,13 +10,14 @@ window.angular && (() => {
       restrict: 'A',
       require: '?ngModel',
       link: (scope, element, attr, model) => {
-        if (!model) return;
-
+        if (!model) throw '"ngModel" required by "validateEmail" directive!';
+        
         model.$validators.email = (modelValue, viewValue) => {
           if (!allowed.test(modelValue)) return false;
           if (notAllowed.test(modelValue)) return false;
           return true;
         };
+
       }
     };
   }]);
