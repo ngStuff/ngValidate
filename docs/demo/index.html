@@ -15,49 +15,19 @@
 <body ng-controller="MyAppController">
 
   <form name="demoForm">
-    <input type="text" name="email" ng-model="data.email" validate-email>
-    <div ng-if="demoForm.$error.email">Email Address does not appear to be valid</div>
+    <p data-height="265" data-theme-id="0" data-slug-hash="MEbBPY" data-default-tab="html,result" data-user="christianezeani" data-embed-version="2" data-pen-title="validateEmail" class="codepen">See the Pen <a href="https://codepen.io/christianezeani/pen/MEbBPY/">validateEmail</a> by Christian Ezeani (<a href="https://codepen.io/christianezeani">@christianezeani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
     <hr>
 
-    <input type="text" name="name" ng-model="data.name" validate-callback="isEven($data)">
-    <div ng-if="demoForm.$error.callback">Input does not appear to be an even number</div>
+    <p data-height="265" data-theme-id="0" data-slug-hash="aLBjmO" data-default-tab="html,result" data-user="christianezeani" data-embed-version="2" data-pen-title="validateCallback" class="codepen">See the Pen <a href="https://codepen.io/christianezeani/pen/aLBjmO/">validateEmail</a> by Christian Ezeani (<a href="https://codepen.io/christianezeani">@christianezeani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
     <hr>
 
-    <div>
-      <input type="password" name="password" ng-model="data.password" required>
-      <div ng-if="demoForm.$error.required">Please enter your password</div>
-    </div>
+    <p data-height="265" data-theme-id="0" data-slug-hash="ZXBjwb" data-default-tab="html,result" data-user="christianezeani" data-embed-version="2" data-pen-title="matchWith" class="codepen">See the Pen <a href="https://codepen.io/christianezeani/pen/ZXBjwb/">validateEmail</a> by Christian Ezeani (<a href="https://codepen.io/christianezeani">@christianezeani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
-    <div>
-      <input type="password" name="password" ng-model="data.cpassword" match-with="data.password">
-      <div ng-if="demoForm.$error.match">Passwords do not match</div>
-    </div>
-
-    <div>
-      <button ng-disabled="demoForm.$invalid" type="submit">Submit</button>
-    </div>
   </form>
   
-  <script src="assets/angularjs/angular.min.js"></script>
-  <script src="../../dist/ngValidate.js"></script>
-
-  <script type="text/javascript">
-  var myApp = angular.module('myApp', ['ngValidate']);
-
-  myApp.controller('MyAppController', ['$scope', function ($scope) {
-
-    $scope.data = {};
-
-    $scope.isEven = function (data) {
-      if (!data || isNaN(data)) return false;
-      if (data % 2) return false;
-      return true;
-    };
-    
-  }]);
-  </script>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </body>
 
 </html>
