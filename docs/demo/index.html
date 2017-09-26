@@ -15,6 +15,10 @@
 <body ng-controller="MyAppController">
 
   <form name="demoForm">
+
+    <input type="text" name="email" ng-model="data.email" validate-async="validate($data)">
+    <div ng-if="demoForm.email.$error.async">Email already in used</div>
+
     <p data-height="265" data-theme-id="0" data-slug-hash="MEbBPY" data-default-tab="html,result" data-user="christianezeani" data-embed-version="2" data-pen-title="validateEmail" class="codepen">See the Pen <a href="https://codepen.io/christianezeani/pen/MEbBPY/">validateEmail</a> by Christian Ezeani (<a href="https://codepen.io/christianezeani">@christianezeani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
     <hr>
@@ -27,7 +31,24 @@
 
   </form>
   
+  <!--
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+  -->
+  <script src="assets/angularjs/angular.min.js"></script>
+  <script src="../../dist/ngValidate.js"></script>
+  <script>
+    var myApp = angular.module('myApp', ['ngStuff.validate']);
+
+    myApp.controller('MyAppController', ['$scope', function ($scope) {
+
+      $scope.data = {};
+
+      $scope.validate = function () {
+        // 
+      };
+
+    }]);
+  </script>
 </body>
 
 </html>

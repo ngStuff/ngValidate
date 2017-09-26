@@ -12,10 +12,9 @@ window.angular && (() => {
 
         let callback = $parse(attr.validateAsync);
 
-        model.$validators.async = (modelValue) => {
+        model.$asyncValidators.async = (modelValue) => {
           let response = callback(scope, { $data:  modelValue });
-          if (response !== true) return false;
-          return true;
+          return $q.when(response);
         };
       }
     };
