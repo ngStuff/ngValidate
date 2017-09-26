@@ -27,13 +27,4 @@ Add "ngStuff.validator" module to your app. Example:
 var app = angular.module('myApp', ['ngStuff.validator']);
 ```
 
-<p data-height="265" data-theme-id="0" data-slug-hash="MEbBPY" data-default-tab="html,result" data-user="christianezeani" data-embed-version="2" data-pen-title="validateEmail" class="codepen">See the Pen <a href="https://codepen.io/christianezeani/pen/MEbBPY/">validateEmail</a> by Christian Ezeani (<a href="https://codepen.io/christianezeani">@christianezeani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-
-<p data-height="265" data-theme-id="0" data-slug-hash="aLBjmO" data-default-tab="html,result" data-user="christianezeani" data-embed-version="2" data-pen-title="validateCallback" class="codepen">See the Pen <a href="https://codepen.io/christianezeani/pen/aLBjmO/">validateEmail</a> by Christian Ezeani (<a href="https://codepen.io/christianezeani">@christianezeani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-
-
-<p data-height="265" data-theme-id="0" data-slug-hash="ZXBjwb" data-default-tab="html,result" data-user="christianezeani" data-embed-version="2" data-pen-title="matchWith" class="codepen">See the Pen <a href="https://codepen.io/christianezeani/pen/ZXBjwb/">validateEmail</a> by Christian Ezeani (<a href="https://codepen.io/christianezeani">@christianezeani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-
-
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
