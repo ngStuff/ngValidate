@@ -3,7 +3,7 @@ window.angular && (() => {
   let allowed = /^[\w\.\-]+\@[a-zA-Z0-9\.\-]+\.[a-zA-Z0-9\.\-]{2,}$/;
   let notAllowed = /(^[^a-zA-Z0-9]+|[^a-zA-Z0-9]{2,}|[^a-zA-Z0-9]+$)/;
   
-  let app = angular.module('ngStuff.validate');
+  let app = angular.module('ngStuff.validator');
   
   app.directive('validateEmail', [() => {
     return {

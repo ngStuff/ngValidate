@@ -2,7 +2,7 @@ const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
-const buildName = 'ngValidate.js';
+const buildName = 'validator.js';
 const buildDir = 'dist';
 const buildPath = `${buildDir}/${buildName}`;
 

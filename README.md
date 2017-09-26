@@ -22,9 +22,9 @@ git clone https://github.com/ngStuff/validator.git
 
 
 # Usage
-Add "ngStuff.validate" module to your app. Example:
+Add "ngStuff.validator" module to your app. Example:
 ```
-var app = angular.module('myApp', ['ngStuff.validate']);
+var app = angular.module('myApp', ['ngStuff.validator']);
 ```
 
 <p data-height="265" data-theme-id="0" data-slug-hash="MEbBPY" data-default-tab="html,result" data-user="christianezeani" data-embed-version="2" data-pen-title="validateEmail" class="codepen">See the Pen <a href="https://codepen.io/christianezeani/pen/MEbBPY/">validateEmail</a> by Christian Ezeani (<a href="https://codepen.io/christianezeani">@christianezeani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
