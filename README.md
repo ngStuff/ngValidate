@@ -7,17 +7,17 @@ AngularJS module for form validation
 # Installation
 Install via bower:
 ```
-bower install ngstuff-validate
+bower install ngstuff-validator
 ```
 
 Install via npm:
 ```
-npm install ngstuff-validate
+npm install ngstuff-validator
 ```
 
 Install via git:
 ```
-git clone https://github.com/ngStuff/ngValidate.git
+git clone https://github.com/ngStuff/validator.git
 ```
 
 

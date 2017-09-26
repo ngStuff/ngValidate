@@ -1,5 +1,5 @@
 {
-  "name": "ngstuff-validate",
+  "name": "ngstuff-validator",
   "description": "This is an angularjs module for validating form fields",
   "main": "index.js",
   "authors": [
@@ -13,7 +13,7 @@
     "form-fields",
     "fields"
   ],
-  "homepage": "https://github.com/ngStuff/ngValidate",
+  "homepage": "https://github.com/ngStuff/validator",
   "ignore": [
     "**/.*",
     "node_modules",

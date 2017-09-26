@@ -1,5 +1,5 @@
 {
-  "name": "ngstuff-validate",
+  "name": "ngstuff-validator",
   "version": "1.0.0",
   "description": "This is an angularjs module for validating form fields",
   "main": "index.js",
@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ngStuff/ngValidate.git"
+    "url": "git+https://github.com/ngStuff/validator.git"
   },
   "keywords": [
     "angularjs",
-    "ngvalidate",
+    "validator",
     "form",
     "form-fields",
     "fields"
@@ -20,9 +20,9 @@
   "author": "Christian Ezeani",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ngStuff/ngValidate/issues"
+    "url": "https://github.com/ngStuff/validator/issues"
   },
-  "homepage": "https://github.com/ngStuff/ngValidate#readme",
+  "homepage": "https://github.com/ngStuff/validator#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
