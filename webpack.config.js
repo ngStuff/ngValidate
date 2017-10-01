@@ -15,7 +15,7 @@ const docsBuildPath = `${docsBuildDir}/${docsBuildName}`;
 module.exports = [
   {
     name: 'Minified Output',
-    entry: './src/index.js',
+    entry: './src/module/index.js',
     output: {
       filename: buildName,
       path: path.resolve(__dirname, buildDir)

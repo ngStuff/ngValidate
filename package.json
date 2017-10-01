@@ -4,10 +4,7 @@
   "description": "This is an angularjs module for validating form fields",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node_modules/.bin/webpack --progress",
-    "push-dev": "git push origin develop",
-    "push-master": "git checkout master && git merge develop && git push origin master && git checkout develop"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
