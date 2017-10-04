@@ -64,11 +64,8 @@ module.exports = [
       new CleanWebpackPlugin([docsBuildPath]),
       new UglifyJSPlugin({
         sourceMap: true
-      }),
-      // new ExtractTextPlugin({
-      //   filename: "bundle.css",
-      //   allChunks: true
-      // })
+      })
+      // new ExtractTextPlugin('bundle.css')
     ],
     module: {
       loaders: [
@@ -79,16 +76,9 @@ module.exports = [
         },
         {
           test: /\.css$/,
-          use: [
-            'style-loader',
-            'css-loader'
-          ]
-          // use: ExtractTextPlugin.extract({
-          //   use: [
-          //     'style-loader',
-          //     'css-loader'
-          //   ]
-          // })
+          exclude: /node_modules/,
+          loader: ['style-loader', 'css-loader']
+          // loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
         }
       ]
     }

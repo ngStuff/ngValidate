@@ -2,3 +2,19 @@ body {
   margin: 0px;
 }
 
+.header, .sidebar {
+  position: fixed;
+}
+
+.header {
+  top: 0px; height: 150px;
+  left: 0px; right: 0px;
+  border-bottom: 1px solid #DDD;
+}
+
+.sidebar {
+  top: 150px; bottom: 0px;
+  left: 0px; width: 200px;
+  border-right: 1px solid #DDD;
+}
+
