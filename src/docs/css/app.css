@@ -1,0 +1,120 @@
+
+body {
+  margin: 0px;
+  font-size: 12pt;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.header {
+  position: relative;
+  z-index: 5;
+}
+
+.header-top {
+  padding: 10px 0px;
+  background-color: #FFF;
+  font-size: 10pt;
+}
+
+.header-top-link {
+  font-size: 14pt;
+}
+
+.header-bottom {
+  height: 200px;
+  background: url(../images/bg.jpg) center whitesmoke;
+  background-color: #FFF;
+  box-shadow: 0px 2px 10px #CCC;
+}
+
+.logo {
+  padding: 10px;
+  text-align: center;
+}
+.logo img {
+  height: 100px;
+}
+
+.header-banner {
+  padding: 5px 0px;
+  background-color: #AA6014;
+  width: 320px;
+  position: fixed;
+  top: 40px;
+  right: -90px;
+  transform: rotate(45deg);
+}
+.header-banner > a {
+  display: block;
+  font-size: 13pt;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px dashed #FFF;
+  border-left: none;
+  border-right: none;
+}
+
+
+.ngs-container {
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.main-content {
+  height: auto;
+  min-height: 300px;
+  box-shadow: 0px 3px 10px #CCC;
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+.side-bar {
+  width: 250px;
+  background-color: whitesmoke;
+}
+
+.page-frame {
+  box-shadow: 0px 0px 5px #CCC;
+  overflow: auto;
+}
+
+.page-title,
+.page-subtitle {
+  color: #385569;
+  border-bottom: 1px solid #DDD;
+  margin: 0px 0px 10px 0px;
+}
+.page-title {
+  padding: 20px;
+}
+.page-subtitle {
+  padding: 15px 0px;
+}
+
+.page-content {
+  padding: 10px 20px 20px 20px;
+}
+
+
+
+.footer {
+  position: relative;
+  z-index: 5;
+  background-color: #FFF;
+  box-shadow: 0px 0px 5px #CCC;
+  height: 200px;
+}
+
+
+
+
+.CodeMirror {
+  height: auto;
+  margin-bottom: 30px;
+}

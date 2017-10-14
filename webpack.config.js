@@ -4,15 +4,10 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+// Modules Config
 const buildName = 'validator.js';
 const buildDir = 'dist';
-const buildPath = `${buildDir}/${buildName}`;
 
-const docsBuildName = 'bundle.js';
-const docsBuildDir = 'docs/assets/js';
-const docsBuildPath = `${docsBuildDir}/${docsBuildName}`;
-
-// Modules Config
 let modulesConfig = {
   name: 'Minified Output',
   entry: './src/module/index.js',
@@ -26,7 +21,9 @@ let modulesConfig = {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    new CleanWebpackPlugin([buildPath]),
+    new CleanWebpackPlugin([
+      `${buildDir}/${buildName}`
+    ]),
     new UglifyJSPlugin({
       sourceMap: true
     })
@@ -52,6 +49,9 @@ let modulesConfig = {
 
 
 // Documentation Config
+const docsBuildName = 'bundle.js';
+const docsBuildDir = 'docs/assets';
+
 let documentationConfig = {
   name: 'Documentation Output',
   entry: './src/docs/index.js',
@@ -65,11 +65,17 @@ let documentationConfig = {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    new CleanWebpackPlugin([docsBuildPath]),
+    new CleanWebpackPlugin([
+      `${docsBuildDir}/${docsBuildName}`,
+      `${docsBuildDir}/bundle.css`
+    ]),
     new UglifyJSPlugin({
       sourceMap: true
+    }),
+    new ExtractTextPlugin({
+      filename: 'bundle.css',
+      allChunks: true
     })
-    // new ExtractTextPlugin('bundle.css')
   ],
   module: {
     loaders: [
@@ -81,8 +87,18 @@ let documentationConfig = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        loader: ['style-loader', 'css-loader']
-        // loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+        // loader: ['style-loader', 'css-loader']
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader']
+        })
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        loader: 'file-loader',
+        options: {
+          name: '../images/[name].[ext]'
+        } 
       }
     ]
   }

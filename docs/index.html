@@ -1,39 +1,69 @@
 <!doctype html>
-<html ng-app="ngStuff.docs">
+<html data-ng-app="ngStuff.docs">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Validator</title>
+  <title>ngstuff-validator</title>
 
   <!--  Metadata for Google, Facebook, Twitter -->
   <meta name="description" content="">
 
+  <link rel="stylesheet" href="assets/bootstrap-3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/codemirror-5.30.0/lib/codemirror.css">
+  <link rel="stylesheet" href="assets/codemirror-5.30.0/theme/mdn-like.css">
+  <link rel="stylesheet" href="assets/bundle.css">
+
 </head>
 
-<body ng-controller="BaseController">
+<body data-ng-controller="AppController">
   <section class="body">
     <!-- HEADER -->
     <section class="header">
-      <section class="header-top"></section>
+      <section class="header-top ngs-container">
+        <a target="blank" href="https://ngstuff.github.io" class="header-top-link">Angular Modules and Extentions</a>
+      </section>
       <section class="header-bottom">
-        <div class="logo"><img src="images/NGS_Shield.png" alt=""></div>
+        <div class="logo">
+          <a href="https://ngstuff.github.io">
+            <img src="images/NGS_Shield.png" alt="">
+          </a>
+        </div>
+      </section>
+      <section class="header-banner">
+        <a href="https://github.com/ngStuff/validator">Fork me on GitHub</a>
       </section>
     </section>
-    <!-- / END HEADER -->
+    <!-- END: HEADER -->
 
     <!-- CONTENT -->
-    <section class="container">
+    <section class="main-content ngs-container display-flex flex-row">
+      <section class="side-bar">
+        <!--  -->
+      </section>
+      <section class="page-frame flex-1" ui-view></section>
+    </section>
+    <!-- END: CONTENT -->
+
+    <!-- FOOTER -->
+    <section class="footer">
       <!--  -->
     </section>
-    <!-- / END CONTENT -->
+    <!-- END: FOOTER -->
   </section>
   <!--
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
   -->
   <script src="assets/angularjs/angular.min.js"></script>
-  <script src="assets/js/bundle.js"></script>
+  <script src="assets/angularjs/libs/angular-ui-router.min.js"></script>
+  <script src="assets/codemirror-5.30.0/lib/codemirror.js"></script>
+  <script src="assets/codemirror-5.30.0/mode/javascript/javascript.js"></script>
+  <script src="assets/codemirror-5.30.0/mode/css/css.js"></script>
+  <script src="assets/codemirror-5.30.0/mode/xml/xml.js"></script>
+  <script src="assets/codemirror-5.30.0/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="assets/bundle.js"></script>
 </body>
 
 </html>

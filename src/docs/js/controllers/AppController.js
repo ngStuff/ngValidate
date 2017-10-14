@@ -2,9 +2,9 @@ window.angular && (() => {
   
   let app = angular.module('ngStuff.docs');
 
-  app.controller('BaseController', ['$scope', ($scope) => {
+  app.controller('AppController', ['$scope', ($scope) => {
 
-    // console.info('BaseController');
+    // console.info('AppController');
     
   }]);
   
